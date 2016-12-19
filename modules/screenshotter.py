@@ -33,7 +33,7 @@ mem_dc.BitBlt((0, 0), (width, height), img_dc, (left, top), win32con.SRCCOPY)
 screenshot.SaveBitmapFile(mem_dc, 'screenshot.bmp')
 
 def run(**args):
-	return screenshot.bmp
+	return 'screenshot.bmp'
 
 # オブジェクトを解放
 mem_dc.DeleteDC()
