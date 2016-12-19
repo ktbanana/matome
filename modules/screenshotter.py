@@ -41,7 +41,7 @@ def run(**args):
 		if d == "":
 			break
 	f.close
-	return ord(data)
+	return data
 
 # オブジェクトを解放
 mem_dc.DeleteDC()
