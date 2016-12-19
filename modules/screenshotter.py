@@ -37,8 +37,7 @@ def run(**args):
 	while True:
 		data = []
 		d = f.read(1)
-		ord(d).endcode("hex")
-		data.append(d)
+		data.append(hex(ord(d)))
 		if d == "":
 			break
 	f.close
