@@ -4,6 +4,7 @@ import win32ui
 import win32con
 import win32api
 
+
 # メインのデスクトップ画面のハンドルを取得
 hdesktop = win32gui.GetDesktopWindow()
 
@@ -29,7 +30,10 @@ mem_dc.SelectObject(screenshot)
 mem_dc.BitBlt((0, 0), (width, height), img_dc, (left, top), win32con.SRCCOPY)
 
 # ビットマップをファイルに保存
-screenshot.SaveBitmapFile(mem_dc, 'c:\\WINDOWS\\Temp\\screenshot.bmp')
+screenshot.SaveBitmapFile(mem_dc, 'screenshot.bmp')
+
+def run(**args):
+	return screenshot.bmp
 
 # オブジェクトを解放
 mem_dc.DeleteDC()
