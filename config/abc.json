@@ -6,8 +6,9 @@
 	 "module" : "environment"
 	},
 	{
-	 "module" : "screenshotter",
-	 "create" : "screenshot.bmp"
+	 "module" : {"screenshotter":{
+	                               "create" : "screenshot.bmp"}
+	                             }  
 	}
 
 ]
