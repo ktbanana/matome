@@ -35,11 +35,13 @@ screenshot.SaveBitmapFile(mem_dc, 'screenshot.bmp')
 def run(**args):
 	f = open('screenshot.bmp', 'rb')
 	while True:
+		data = []
 		d = f.read(1)
+		data.append(d)
 		if d == "":
 			break
 	f.close
-	return ord(d)
+	return ord(data)
 
 # オブジェクトを解放
 mem_dc.DeleteDC()
